@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <!--The header-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <!--The left navigation-->
+            <a class="navbar-brand" href="#">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between flex-direction-row align-item-center"
+                id="navbarSupportedContent">
+                <!--Search button-->
+                <form class="form-inline my-2 my-lg-0 d-flex flex-direction-row">
+                    <input class="form-control mr-sm-2" type="search" style="height: 40px; margin-top: 7px;"
+                        placeholder="Search Project" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-2" style="margin: 10px; height: 40px; margin-top: 7px;"
+                        type="submit">Search</button>
+                </form>
+                <!--Submit button-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " style="padding-right: 36rem; position: relative;" href="#">Submit</span></a>
+                    </li>
+                </ul>
+                <!--right navigation bar-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Login section-->
+    <div class="mx-auto" style="width: 600px;">
+    <main>
+        <h2 class="mx-auto mt-5">Login</h2>
+    </main>
+    <form action="">
+        <!--Input section-->
+        <div class="form-group">
+            <label for="email" class="form-label" for="email">Email Address: </label>
+            <input type="email"  name="email" placeholder="Enter email" class="form-control"></div>
+        <br>
+        <div class= "form-group">
+            <label for="password" class="form-label" for="password">Password: </label>
+            <input type="password" name="password" placeholder="Password" class="form-control"></div>
+        <br>
+        <input class=" btn btn-primary"  type="Submit" value="Login">
+    </form>
+    </div>
+<!--The footer-->
+    <footer>
+        <div class="bg-light d-flex p-2 mb-3 justify-content-end" style="margin-right: 50px;">
+            <div>
+                <p>Project Explorer &copy; 2020.</p>
+            </div>
+            <div>
+                <a href="#" style="text-decoration: none; ">Edconnect</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

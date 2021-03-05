@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumbit Project</title>
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <!--The header-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <!--The left navigation-->
+            <a class="navbar-brand" href="#">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between flex-direction-row align-item-center"
+                id="navbarSupportedContent">
+                <!--Search button-->
+                <form class="form-inline my-2 my-lg-0 d-flex flex-direction-row">
+                    <input class="form-control mr-sm-2" type="search" style="height: 40px; margin-top: 7px;"
+                        placeholder="Search Project" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-2" style="margin: 10px; height: 40px; margin-top: 7px;"
+                        type="submit">Search</button>
+                </form>
+                <!--Submit button-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " style="padding-right: 36rem; position: relative;" href="#">Submit</span></a>
+                    </li>
+                </ul>
+                <!--right navigation bar-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Submit Section-->
+    <section class="mx-auto" style="width: 500px;">
+        <h3 class="mt-4">Submit Project</h3>
+        <form>
+            <div class="form-group">
+                <label>Project Name: </label></br>
+                <input type="text" class="form-control" class="form-label" value="Enter Project Name" name="name">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Project Abstract: </label></br>
+                <textarea id="abstract" class="form-control" class="form-label" name="abstract" rows="4" cols="50">
+                            </textarea></br>
+            </div>
+            <div class="form-group">
+                <label>Author(s): </label></br>
+                <input type="text" class="form-control" class="form-label" value="Enter Author Name (separated by comma)"
+                    name="authors">
+            </div>
+            <br>
+            <div class="form-group">
+                <label>Tag(s): </label></br>
+                <input type="text" class="form-control" class="form-label" value="Use # to tag project with different topics (e.g #javascript #mongodb)" name="tags">
+            </div>
+            <br>
+            <div>
+                <button type="submit" class="btn btn-primary" value="Continue">Continue</button>
+            </div>
+        </form>
+    </section>
+    <!--The footer-->
+    <footer style="position: relative">
+        <div class="bg-light d-flex p-2 mb-3 justify-content-end" style="margin-right: 50px;">
+            <div>
+                <p>Project Explorer &copy; 2020.</p>
+            </div>
+            <div>
+                <a href="#" style="text-decoration: none; ">Edconnect</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

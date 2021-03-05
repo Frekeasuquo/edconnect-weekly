@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <!--The header-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <!--The left navigation-->
+            <a class="navbar-brand" href="#">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-between flex-direction-row align-item-center"
+                id="navbarSupportedContent">
+                <!--Search button-->
+                <form class="form-inline my-2 my-lg-0 d-flex flex-direction-row">
+                    <input class="form-control mr-sm-2" type="search" style="height: 40px; margin-top: 7px;"
+                        placeholder="Search Project" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-2" style="margin: 10px; height: 40px; margin-top: 7px;"
+                        type="submit">Search</button>
+                </form>
+                <!--Submit button-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " style="padding-right: 36rem; position: relative;" href="#">Submit</span></a>
+                    </li>
+                </ul>
+                <!--right navigation bar-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--container section-->
+    <div class="container">
+        <section class="w-75 mx-auto mt-5 mb-2">
+            <div class="d-flex">
+                <h3>Ndifreke Asuquo</h3>
+                <p class="p-2">asuquondifreke06@gmail.com</p>
+            </div>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-sm">
+                        Program<br />
+                        Computer Information Systems
+                    </div>
+                <div class="col-sm">
+                    Matric<br />
+                    66/6666
+                </div>
+                <div class="col-sm">
+                    Graduation Year<br />
+                    2019
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-75 mx-auto mt-5 mb-2">
+            <!--Update section-->
+            <h5>Update Profile</h5>
+            <hr>
+            <form updateProfile>
+                <div class="w-75 mx-auto mt-5">
+                    <div class="form-row d-flex justify-content-space-between">
+                        <div class="form-group col-md-6 p-1 ">
+                            <label class="form-label">First Name: </label><input type="text"  class="form-control" name="firstName">
+                        </div>
+                        <div class="form-group col-md-6 p-1">
+                            <label class="form-label">Last Name: </label><input type="text" class="form-control"  name="lastName">
+                        </div>
+                    </div>
+                    <div class="form-row d-flex justify-content-space-between">
+                        <div class="form-group col-md-6 p-1">
+                            <label class="form-label">Email Address: </label><input type="email" class="form-control"name="email">
+                        </div>
+                        <div class="form-group col-md-6 p-1">
+                            <label class="form-label">Program: </label><select name="program" class="form-select" class="form-control">
+                                <option selected>Choose</option>
+                                <option value="computer_science">Computer Science</option>
+                                <option value="computer_information_systems">Computer Information Systems</option>
+                                <option value="computer_technology">Computer Technology</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row d-flex justify-content-space-between">
+                        <div class="form-group col-md-6 p-1">
+                            <label class="form-label">Matric Number: </label><input type="text" class="form-control" name="matricNumber">
+                        </div>
+                        <div class="form-group col-md-6 p-1">
+                            <label class="form-label">Graduation Year: </label><select class="form-select" name="graduationYear" class="form-control" >
+                                <option selected>Choose</option>
+                                <option value="2013">2013</option>
+                                <option value="2014">2014</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                            </select></br>
+                        </div>
+                    </div>
+            <!--button-->
+            <button type="submit" class="btn btn-primary" value="Update Profile">Update Profile</button>
+                </div>
+        </section>
+        <!--Change password section-->
+        <section class="w-75 mx-auto mt-5 mb-2">
+            <h5>Change Password</h5>
+            <hr>
+            <form changePassword>
+                <div class="w-75 mx-auto mt-5">
+                    <div class="form-row d-flex justify-content-space-between">
+                        <div class="form-group col-md-4 p-1">
+                            <label class="form-label">Current Password: </label><input type="password" placeholder="Current Password" class="form-control" 
+                                name="currentPassword">
+                        </div>
+                        <div class="form-group col-md-4 p-1">
+                            <label class="form-label">New Password: </label><input type="password" placeholder="New Password" class="form-control" 
+                                name="newPassword">
+                        </div>
+                        <div class="form-group col-md-4 p-1">
+                            <label class="form-label">Confirm Password: </label><input type="password" placeholder="Confrim Password" class="form-control"
+                                name="confirmPassword">
+                        </div>
+                    </div>
+                <button type="submit" class="btn btn-primary mt-2" value="Change Password">Change Password</button>
+                </div>
+        </section>
+    </div>
+    <!--The footer-->
+    <footer style="position: relative">
+        <div class="bg-light d-flex p-2 mb-3 justify-content-end" style="margin-right: 50px;">
+            <div>
+                <p>Project Explorer &copy; 2020.</p>
+            </div>
+            <div>
+                <a href="#" style="text-decoration: none; ">Edconnect</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
