@@ -46,70 +46,59 @@
             </div>
         </nav>
     </header>
-    <!--container section-->
-    <div class="container">
-        <section class="w-75 mx-auto mt-5 mb-2">
-            <div class="d-flex">
-                <h3>Ndifreke Asuquo</h3>
-                <p class="p-2">asuquondifreke06@gmail.com</p>
-            </div>
+    <main class="w-75 mx-auto mt-5 mb-5">
+        <div class="container">
+            <h3>John Doe</h3>
+            <p>johndoe@gmail.com</p>
             <div class="jumbotron">
                 <div class="row">
                     <div class="col-sm">
                         Program<br />
-                        Computer Information Systems
+                        Computer Science
                     </div>
-                <div class="col-sm">
-                    Matric<br />
-                    66/6666
-                </div>
-                <div class="col-sm">
-                    Graduation Year<br />
-                    2019
-                </div>
+                    <div class="col-sm">
+                        Matric<br />
+                        00/0000
+                    </div>
+                    <div class="col-sm">
+                        Graduation Year<br />
+                        2019
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="w-75 mx-auto mt-5 mb-2">
-            <!--Update section-->
-            <h5>Update Profile</h5>
-            <hr>
-            <form updateProfile>
-                <div class="w-75 mx-auto mt-5">
-                    <div class="form-row d-flex justify-content-space-between">
-                        <div class="form-group col-md-6 p-1 ">
-                            <label class="form-label">First Name: </label>
-                            <input type="text"  class="form-control" name="firstName">
+    
+            <section>
+                <h3>Update Profile</h3>
+                <form class="w-50 mx-auto mb-4">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>First Name: </label><input type="text" value="First Name" class="form-control"
+                                name="firstName"></br>
                         </div>
-                        <div class="form-group col-md-6 p-1">
-                            <label class="form-label">Last Name: </label>
-                            <input type="text" class="form-control"  name="lastName">
+                        <div class="form-group col-md-6">
+                            <label>Last Name: </label><input type="text" class="form-control" value="Last Name"
+                                name="lastName"></br>
                         </div>
                     </div>
-                    <div class="form-row d-flex justify-content-space-between">
-                        <div class="form-group col-md-6 p-1">
-                            <label class="form-label">Email Address: </label>
-                            <input type="email" class="form-control"name="email">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Email Address: </label><input type="email" value="Your Email Address"
+                                class="form-control" name="email"></br>
                         </div>
-                        <div class="form-group col-md-6 p-1">
-                            <label class="form-label">Program: </label>
-                            <select name="program" class="form-select" class="form-control">
-                                <option selected>Choose</option>
+                        <div class="form-group col-md-6">
+                            <label>Program: </label><select name="program" class="form-control">
                                 <option value="computer_science">Computer Science</option>
                                 <option value="computer_information_systems">Computer Information Systems</option>
                                 <option value="computer_technology">Computer Technology</option>
                             </select>
                         </div>
                     </div>
-                    <div class="form-row d-flex justify-content-space-between">
-                        <div class="form-group col-md-6 p-1">
-                            <label class="form-label">Matric Number: </label>
-                            <input type="text" class="form-control" name="matricNumber">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label>Matric Number: </label><input type="text" class="form-control" name="matricNumber"></br>
                         </div>
-                        <div class="form-group col-md-6 p-1">
-                            <label class="form-label">Graduation Year: </label>
-                            <select class="form-select" name="graduationYear" class="form-control" >
-                                <option selected>Choose</option>
+                        <div class="form-group col-md-6">
+                            <label>Graduation Year: </label><select name="graduationYear" class="form-control">
                                 <option value="2013">2013</option>
                                 <option value="2014">2014</option>
                                 <option value="2015">2015</option>
@@ -118,35 +107,32 @@
                                 <option value="2018">2018</option>
                                 <option value="2019">2019</option>
                                 <option value="2020">2020</option>
-                            </select>
+                            </select></br>
                         </div>
                     </div>
-            <!--button-->
-            <button type="submit" class="btn btn-primary" value="Update Profile">Update Profile</button>
+                    <button type="submit" class="btn btn-primary" value="Update Profile">Update Profile</button>
+                </form>
+            </section>
+    
+            <h3>Change Password</h3>
+            <form class="w-50 mx-auto">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label>Current Password: </label><input type="password" class="form-control"
+                            value="Current Password" name="currentPassword"></br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>New Password: </label><input type="password" class="form-control" value="Your New Password"
+                            name="newPassword"></br>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Confirm Password: </label><input type="password" class="form-control"
+                            value="Confirm New Password" name="confirmPassword"></br>
+                    </div>
+                    <button type="submit" class="btn btn-primary" value="Change Password">Change Password</button>
                 </div>
-        </section>
-        <!--Change password section-->
-        <h3>Change Password</h3>
-        <form class="w-50 mx-auto">
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label>Current Password: </label>
-                    <input type="password" class="form-control" value="Current Password"
-                        name="currentPassword">
-                </div>
-                <div class="form-group col-md-4">
-                    <label>New Password: </label>
-                    <input type="password" class="form-control" value="Your New Password"
-                        name="newPassword">
-                </div>
-                <div class="form-group col-md-4">
-                    <label>Confirm Password: </label>
-                    <input type="password" class="form-control" value="Confirm New Password" name="confirmPassword">
-                </div>
-                <button type="submit" class="btn btn-primary" value="Change Password">Change Password</button>
-            </div>
-        </form>
-    </div>
+            </form>
+    </main>
     <!--The footer-->
     <footer style="position: relative">
         <div class="bg-light d-flex p-2 mb-3 justify-content-end" style="margin-right: 50px;">
