@@ -126,29 +126,26 @@
                 </div>
         </section>
         <!--Change password section-->
-        <section class="w-75 mx-auto mt-5 mb-2">
-            <h5>Change Password</h5>
-            <hr>
-            <form class="mx-auto">
-                <div class="w-75 mx-auto mt-5">
-                    <div class="form-row d-flex justify-content-space-between">
-                        <div class="form-group col-md-4 p-1">
-                            <label for="currentpassword">Current Password:</label>
-                            <input type="password" class="form-control" name="currentPassword" placeholder="Current Password">
-                        </div>
-                        <div class="form-group col-md-4 p-1">
-                            <label for="newpassword">New Password:</label>
-                            <input type="password" class="form-control"  name="newPassword" placeholder="Your new password">
-                        </div>
-                        <div name="confirmPassword" class="form-control" class="form-group col-md-4 p-1">
-                            <label for="confirmPassword">Confirm Password:</label>
-                            <input name="confirmPassword" type="password" class="form-control" name="confirmPassword"  placeholder="Confirm new password">
-                        </div>
-                    </div>
+        <h3>Change Password</h3>
+        <form class="w-50 mx-auto">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label>Current Password: </label>
+                    <input type="password" class="form-control" value="Current Password"
+                        name="currentPassword">
                 </div>
-                    <button type="submit" class="btn btn-primary mt-2" value="Change Password">Change Password</button>
-            </form>
-        </section>
+                <div class="form-group col-md-4">
+                    <label>New Password: </label>
+                    <input type="password" class="form-control" value="Your New Password"
+                        name="newPassword">
+                </div>
+                <div class="form-group col-md-4">
+                    <label>Confirm Password: </label>
+                    <input type="password" class="form-control" value="Confirm New Password" name="confirmPassword">
+                </div>
+                <button type="submit" class="btn btn-primary" value="Change Password">Change Password</button>
+            </div>
+        </form>
     </div>
     <!--The footer-->
     <footer style="position: relative">
