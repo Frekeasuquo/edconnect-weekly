@@ -52,50 +52,76 @@
         <h3>Project 1</h3>
         <div class="container mb-5 bg-light pt-3 pb-3">
             <div class="row">
-                <div class="col-sm">
-                    Created By</br>
-                    Ndifreke Asuquo
+                <div class="col">
+                    <div class="form-group">
+                    <label class="label">Created By</label> 
+                    <p>Ndifreke Asuquo</p>  
+                    </div>
                 </div>
-                <div class="col-sm">
-                    Date Created</br>
-                    01/10/10
+                <div class="col">
+                    <div class="form-group">
+                    <label class="form-label">Date Created</label> 
+                    <p>01/10/10</p> 
+                    </div>
                 </div>
-                <div class="col-sm">
-                    Last Updated</br>
-                    02/10/10
+                <div class="col">
+                    <div class="form-group">
+                    <label class="form-label">Last Updated</label> 
+                    <p>02/10/10</p> 
+                    </div>
                 </div>
-                <div class="col-sm d-flex justify-content-end">
-                    <a href="viewproject.html" class="btn btn-primary" name="Viewproject">View Project</a>
+                <div class="col">
+                    <div class="form-group">
+                        <div class="col-sm d-flex justify-content-end">
+                            <a href="viewproject.html" class="btn btn-primary" name="Viewproject">View Project</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-sm">
+                <div class="col">
                     <h4>Edit Project</h4>
                     <hr>
                     <form>
-                        <div class="form-group">
-                            <label class="form-label">Project Name: </label></br>
-                            <input type="text" class="form-control " name="name" placeholder="Project 1"></br>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="form-label">Project Name: </label></br>
+                                    <input type="text" class="form-control " name="name" placeholder="Project 1">
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="form-label">Project Abstract: </label></br>
-                            <textarea id="abstract" type="text" class="form-control" name="abstract" rows="4" cols="20">Project 1 is very instresting project
-                            </textarea>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="form-label">Project Abstract: </label></br>
+                                    <textarea id="abstract" type="text" class="form-control" name="abstract" rows="4" cols="20">Project 1 is very instresting project
+                                    </textarea>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="form-label">Authors: </label></br>
-                            <input type="text" placeholder="Ndifreke Asuquo" class="form-control" name="authors">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Authors: </label></br>
+                                    <input type="text" placeholder="Ndifreke Asuquo" class="form-control" name="authors">
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label class="form-label">Tag(s): </label></br>
-                            <input type="text" placeholder="#web" class="form-control" name="tags"></br>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Tag(s): </label></br>
+                                    <input type="text" placeholder="#web" class="form-control" name="tags"></br>
+                                </div>
+                            </div>
                         </div>
                         <button type="submit" class="btn btn-primary" value="Save">Save</button>
                     </form>
                 </div>
-        <div class="col-sm">
+        <div class="col">
             <h4>Manage Project Files</h4>
             <hr>
             <form>
@@ -106,12 +132,14 @@
                     </div>
                 </div>
             </form>
-            <div class="card mt-5">
-                <div class="card-header">
-                    Project Files
-                </div>
-                <div class="card-body">
-                    <p class="card-text">No file uploaded yet</p>
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        Project Files
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">No file uploaded yet</p>
+                    </div>
                 </div>
             </div>
         </div>
