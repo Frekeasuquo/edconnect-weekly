@@ -79,63 +79,44 @@
                 </div>
             </div>
         </div>
-    <div class="container">
-        <form class="form-group" name="editProject">
+        <!--first form-->
+        <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="form-group">
-                        <label class="form-label"><h3>Edit Project</h3>: </label>
-                    </div>
+                    <h3>Edit Project</h3>
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Project Name: </label></br>
+                            <input type="text" class="form-control " name="name"></br>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Project Abstract: </label></br>
+                            <textarea id="abstract" class="form-control" name="abstract" rows="4" cols="20">
+                            </textarea></br>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Authors: </label></br>
+                            <input type="text" class="form-control" name="authors"></br>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Tag(s): </label></br>
+                            <input type="text" class="form-control" name="tags"></br>
+                        </div>
+                        <button type="submit" class="btn btn-primary" value="Save">Save</button>
+                    </form>
                 </div>
-            </div>
-            <div class="row">
+                <!--second form-->
                 <div class="col">
-                    <div class="form-group">
-                        <label class="form-label">Project Name: </label></br>
-                        <input type="text" class="form-control " name="name" placeholder="Project 1">
-                    </div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col">
-                    <div class="form-group">
-                        <label class="form-label">Project Abstract: </label></br>
-                            <textarea id="abstract" type="text" class="form-control" name="abstract" rows="4"  cols="20">Project 1 is very instresting projec</textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col">
-                    <div class="form-group">
-                        <label class="form-label">Authors: </label></br>
-                        <input type="text" placeholder="Ndifreke Asuquo" class="form-control" name="authors">
-                    </div>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col">
-                    <div class="form-group">
-                        <label class="form-label">Tag(s): </label></br>
-                        <input type="text" placeholder="#web" class="form-control" name="tags"></br>
-                    </div>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary" value="Save">Save</button>
-        </form>
-    </div>
-        <div class="col">
-            <h4>Manage Project Files</h4>
-                    <hr>
-            <form>
-                <div class="form-group">
-                    <div class="custom-file">
-                        <input type="file" value="Click to open file browser"   class="custom-file-input"class="form-control" class="form-label">
-                        <label class="custom-file-label form-label"></label>
-                    </div>
-                </div>
-            </form>
-            <div class="col">
-                <div class="form-group">
+                    <h3>Manage Project Files</h3>
+                    <form>
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <input type="file" value="Click to open file browser"
+                                    class="custom-file-input form-control form-label">
+                                <label class="custom-file-label form-label">View Project</label>
+                            </div>
+                        </div>
+                    </form>
                     <div class="card mt-5">
                         <div class="card-header">
                             Project Files
